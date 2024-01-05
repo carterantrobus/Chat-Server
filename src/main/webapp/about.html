@@ -1,0 +1,97 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+    <meta charset="utf-8">
+    <title>Chat Server</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta property="og:title" content="">
+    <meta property="og:type" content="">
+    <meta property="og:url" content="">
+    <meta property="og:image" content="">
+
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="apple-touch-icon" href="icon.png">
+    <!-- Place favicon.ico in the root directory -->
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <meta name="theme-color" content="#fafafa">
+</head>
+
+<body>
+
+<!-- Add your site or application content here -->
+
+<div class="wrapper">
+    <div class="topbar">
+        <h2>Chat Server
+            <a href="about.html" class="about">About</a>
+            <!--      <button class="item" onclick="window.location.href = 'http://localhost:63342/Assignment01/w23-csci2020u-assignment01-ssd_assignment_01/SpamDetectorClient/about.html?_ijt=644hc77km3tgpd23okh1qf10fs';"> About</button>-->
+        </h2>
+    </div>
+    <div class="sidebar">
+        <ul>
+            <li style="color: white; text-align: center;">
+                List of chat rooms
+            </li>
+            <li>
+                <a>
+                    <!--            <span class="item">><strong> Dashboard</strong></span>-->
+                    <!--          <button id ="btRoom" class="item" onclick="enterRoom()">Crete and Join New Room</button>-->
+                    <div id = "room">
+                        <!--            <input type="text" id="room-code">-->
+                        <button id="btRoom" class="button" onclick="newRoom()">Create and Join New Room</button>
+                    </div>
+                </a>
+            </li>
+            <!--      <li>-->
+            <!--        <a>-->
+            <!--          &lt;!&ndash;            <span class="item">><strong> About</strong></span>&ndash;&gt;-->
+            <!--        </a>-->
+            <!--      </li>-->
+        </ul>
+    </div>
+    <div class="bottombar">
+        <a>copyright <span>&copy;</span> CSCI 2020U | Winter 2023</a>
+    </div>
+    <div class="teamInfo">
+        <h2>About us</h2>
+        <strong>This website was brought to you by:</strong>
+        <br>
+        <ul>
+            <li><span>&#x2022;</span>  Jacob Landicho</li>
+            <li><span>&#x2022;</span>  Carter Antrobus</li>
+            <li><span>&#x2022;</span>  Taijbir Kohli</li>
+        </ul>
+        <br><br>
+        <h2>About the App</h2>
+        <p>
+            This web application allows users to join or create a chat server and engage in conversations with their friends in real-time. Users can interact via text making it a versatile tool for staying connected.
+        </p>
+    </div>
+</div>
+
+
+
+
+
+
+<script src="js/vendor/modernizr-3.11.2.min.js"></script>
+<script src="js/plugins.js"></script>
+<script src="js/main.js"></script>
+
+<!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+<script>
+    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+    ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
+</script>
+<script src="https://www.google-analytics.com/analytics.js" async></script>
+</body>
+
+</html>
+
+

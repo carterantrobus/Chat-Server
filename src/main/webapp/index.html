@@ -1,0 +1,112 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <title>Chat Server</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <meta property="og:title" content="">
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <!-- Place favicon.ico in the root directory -->
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <meta name="theme-color" content="#fafafa">
+
+</head>
+
+<body>
+
+<!-- Add your site or application content here -->
+
+<div class="wrapper">
+  <div class="topbar">
+    <h2>Chat Server
+      <a href="about.html" class="about">About</a>
+<!--      <button class="item" onclick="window.location.href = 'http://localhost:63342/Assignment01/w23-csci2020u-assignment01-ssd_assignment_01/SpamDetectorClient/about.html?_ijt=644hc77km3tgpd23okh1qf10fs';"> About</button>-->
+    </h2>
+  </div>
+  <div class="sidebar">
+    <ul>
+      <li>
+        <div id="listOfRooms" style="color: white; text-align: center;">
+          List of chat rooms
+        </div>
+      </li>
+      <li>
+        <a>
+          <!--            <span class="item">><strong> Dashboard</strong></span>-->
+<!--          <button id ="btRoom" class="item" onclick="enterRoom()">Crete and Join New Room</button>-->
+          <div id = "room">
+<!--            <input type="text" id="room-code">-->
+            <button id="btRoom" class="button" onclick="newRoom()">Create and Join New Room</button>
+          </div>
+        </a>
+      </li>
+<!--      <li>-->
+<!--        <a>-->
+<!--          &lt;!&ndash;            <span class="item">><strong> About</strong></span>&ndash;&gt;-->
+<!--        </a>-->
+<!--      </li>-->
+    </ul>
+  </div>
+  <div class="bottombar">
+    <a>copyright <span>&copy;</span> CSCI 2020U | Winter 2023</a>
+  </div>
+</div>
+<div class="mainInfo">
+  <div class="centerInfo">
+    <h3 id="chatRoomHeader"> </h3>
+    <textarea title="Chat Log" id="log" readonly
+              style="display: block; width: 100%; height: 300px; resize: none; margin: 0; padding: 0; border: 0;"></textarea>
+    <input title="Chat Input" id="input" type="text" placeholder= "Say Something cool..." style="display: block; width: 100%; border-width: 1px 0 1px 0;" autofocus/>
+    <button id="sendButton" class="button">Send</button>
+
+
+<!--    <a>The table below displays the results of our spam deletion algorithm:</a>-->
+<!--    <table class="spamProbTable">-->
+<!--      <thead>-->
+<!--      <tr>-->
+<!--        <th class="file">File</th>-->
+<!--        <th class="probability">Spam Probability (%)</th>-->
+<!--        <th class="fileClass">Class</th>-->
+<!--      </tr>-->
+<!--      </thead>-->
+
+
+<!--      <tbody></tbody>-->
+
+
+
+<!--    </table>-->
+  </div>
+</div>
+
+
+
+
+
+<script src="js/vendor/modernizr-3.11.2.min.js"></script>
+<script src="js/plugins.js"></script>
+<script src="js/main.js"></script>
+
+<!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+<script>
+  window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+  ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
+</script>
+<script src="https://www.google-analytics.com/analytics.js" async></script>
+</body>
+
+</html>
+
+
